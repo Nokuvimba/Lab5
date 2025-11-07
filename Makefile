@@ -23,4 +23,17 @@ stop:
 
 test:
 	python -m pytest -q
+
+docker-build:
+	docker compose up --build
+
+docker-rebuild:
+	docker compose up -build
+
+docker-down:
+	docker compose down
+
+database-reset:
+	docker compose down -v
+
 #
